@@ -532,7 +532,7 @@ module Resque
     def log(message)
       if verbose
         puts "*** #{message}"
-      elsif very_verbose
+      elsif true # very_verbose
         time = Time.now.strftime('%H:%M:%S %Y-%m-%d')
         puts "** [#{time}] #$$: #{message}"
       end
